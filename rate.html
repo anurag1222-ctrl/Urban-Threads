@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Us | Urban Threads</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Urban Threads</h1>
+        </div>
+        <div class="header-icons">
+            <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <main class="rate-container">
+        <h1>Rate Your Experience</h1>
+        
+        <form id="rating-form">
+            <div class="rating-stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5"><i class="fas fa-star"></i></label>
+                
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4"><i class="fas fa-star"></i></label>
+                
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3"><i class="fas fa-star"></i></label>
+                
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2"><i class="fas fa-star"></i></label>
+                
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1"><i class="fas fa-star"></i></label>
+            </div>
+            
+            <div class="form-group">
+                <label for="feedback">Your Feedback (Optional)</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Tell us about your experience..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit Rating</button>
+        </form>
+        
+        <div class="thank-you-message" id="thank-you" style="display: none;">
+            <i class="fas fa-heart"></i>
+            <h2>Thank You!</h2>
+            <p>We appreciate your feedback. It helps us improve our services.</p>
+            <a href="index.html" class="btn">Back to Shopping</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> anuragsingh9835@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9835823077</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Urban Threads. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

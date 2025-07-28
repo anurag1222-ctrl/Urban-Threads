@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Urban Threads</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Urban Threads</h1>
+        </div>
+        <div class="header-icons">
+            <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Lowers</a></li>
+            <li><a href="#">Cargos</a></li>
+            <li><a href="#">Hoodies</a></li>
+        </ul>
+    </nav>
+
+    <main class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be loaded here via JavaScript -->
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <a href="index.html" class="btn">Continue Shopping</a>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span id="subtotal">₹0</span>
+            </div>
+            <div class="summary-item">
+                <span>Delivery</span>
+                <span id="delivery">₹30</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total</span>
+                <span id="total">₹30</span>
+            </div>
+            <button class="btn btn-primary" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> anuragsingh9835@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9262218521</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Urban Threads. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

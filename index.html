@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Threads | Fashion for Everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Urban Threads</h1>
+        </div>
+        <div class="header-icons">
+            <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Lowers</a></li>
+            <li><a href="#">Cargos</a></li>
+            <li><a href="#">Hoodies</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Summer Collection 2025</h2>
+                <p>Up to 30% Off on Selected Items</p>
+                <button class="btn">Shop Now</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterProducts('t-shirts')">
+                    <img src="assets/img/t-shirt-cat.jpg" alt="T-Shirts">
+                    <h3>T-Shirts</h3>
+                </div>
+                <div class="category-card" onclick="filterProducts('shirts')">
+                    <img src="assets/img/shirt-cat.jpg" alt="Shirts">
+                    <h3>Shirts</h3>
+                </div>
+                <div class="category-card" onclick="filterProducts('jeans')">
+                    <img src="assets/img/jeans-cat.jpg" alt="Jeans">
+                    <h3>Jeans</h3>
+                </div>
+                <div class="category-card" onclick="filterProducts('lowers')">
+                    <img src="assets/img/lowers-cat.jpg" alt="Lowers">
+                    <h3>Lowers</h3>
+                </div>
+                <div class="category-card" onclick="filterProducts('cargos')">
+                    <img src="assets/img/cargos-cat.jpg" alt="Cargos">
+                    <h3>Cargos</h3>
+                </div>
+                <div class="category-card" onclick="filterProducts('hoodies')">
+                    <img src="assets/img/hoodie-cat.jpg" alt="Hoodies">
+                    <h3>Hoodies</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="product-container">
+                <!-- Products will be loaded here via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> anuragsingh9835@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9835823077</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Urban Threads. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

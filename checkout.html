@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Urban Threads</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Urban Threads</h1>
+        </div>
+        <div class="header-icons">
+            <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Lowers</a></li>
+            <li><a href="#">Cargos</a></li>
+            <li><a href="#">Hoodies</a></li>
+        </ul>
+    </nav>
+
+    <main class="checkout-container">
+        <h1>Checkout</h1>
+        
+        <div class="checkout-steps">
+            <div class="step active">1. Payment Method</div>
+            <div class="step">2. Order Confirmation</div>
+        </div>
+        
+        <div class="payment-methods">
+            <h2>Select Payment Method</h2>
+            
+            <div class="payment-option active" id="qr-payment">
+                <input type="radio" name="payment" id="qr" checked>
+                <label for="qr">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Pay via QR Code</span>
+                </label>
+                
+                <div class="qr-instructions">
+                    <h3>How to pay:</h3>
+                    <ol>
+                        <li>Scan the QR code below with your payment app</li>
+                        <li>Pay the exact amount shown</li>
+                        <li>Take a screenshot of the payment confirmation</li>
+                        <li>Upload it in the form below</li>
+                    </ol>
+                    
+                    <div class="qr-code-container">
+                        <img src="assets/img/qr-code.png" alt="Payment QR Code">
+                        <p>Total Amount: <span id="checkout-total">₹530</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payment-option" id="cod-payment">
+                <input type="radio" name="payment" id="cod">
+                <label for="cod">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Cash on Delivery (₹30 delivery charge)</span>
+                </label>
+                
+                <div class="cod-instructions">
+                    <p>Pay when your order arrives. An additional ₹30 delivery charge will be added to your order.</p>
+                </div>
+            </div>
+        </div>
+        
+        <form id="order-form" class="checkout-form">
+            <h2>Order Details</h2>
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group" id="screenshot-upload">
+                <label for="screenshot">Payment Screenshot (for QR payments)</label>
+                <input type="file" id="screenshot" name="screenshot" accept="image/*">
+            </div>
+            
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div id="checkout-items">
+                    <!-- Order items will be loaded here via JavaScript -->
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="final-total">₹530</span>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> anuragsingh9835@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9835823077</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Urban Threads. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

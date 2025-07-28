@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "Classic White T-Shirt",
+        "price": 499,
+        "category": "t-shirts",
+        "description": "Premium quality white t-shirt made from 100% cotton. Perfect for casual wear and everyday comfort.",
+        "images": [
+            "assets/img/white-tshirt-1.jpg",
+            "assets/img/white-tshirt-2.jpg",
+            "assets/img/white-tshirt-3.jpg"
+        ],
+        "rating": 4.5,
+        "reviews": 128
+    },
+    {
+        "id": 2,
+        "name": "Slim Fit Blue Jeans",
+        "price": 1299,
+        "category": "jeans",
+        "description": "Stylish slim fit blue jeans with stretch technology for maximum comfort and mobility.",
+        "images": [
+            "assets/img/blue-jeans-1.jpg",
+            "assets/img/blue-jeans-2.jpg",
+            "assets/img/blue-jeans-3.jpg"
+        ],
+        "rating": 4.2,
+        "reviews": 86
+    },
+    {
+        "id": 3,
+        "name": "Black Hoodie",
+        "price": 899,
+        "category": "hoodies",
+        "description": "Warm and comfortable black hoodie with front pocket and adjustable drawstrings.",
+        "images": [
+            "assets/img/black-hoodie-1.jpg",
+            "assets/img/black-hoodie-2.jpg",
+            "assets/img/black-hoodie-3.jpg"
+        ],
+        "rating": 4.7,
+        "reviews": 215
+    },
+    {
+        "id": 4,
+        "name": "Casual Checkered Shirt",
+        "price": 799,
+        "category": "shirts",
+        "description": "Trendy checkered shirt perfect for casual outings and semi-formal occasions.",
+        "images": [
+            "assets/img/checkered-shirt-1.jpg",
+            "assets/img/checkered-shirt-2.jpg",
+            "assets/img/checkered-shirt-3.jpg"
+        ],
+        "rating": 4.3,
+        "reviews": 94
+    },
+    {
+        "id": 5,
+        "name": "Cargo Pants",
+        "price": 1099,
+        "category": "cargos",
+        "description": "Durable cargo pants with multiple pockets for utility and style.",
+        "images": [
+            "assets/img/cargo-pants-1.jpg",
+            "assets/img/cargo-pants-2.jpg",
+            "assets/img/cargo-pants-3.jpg"
+        ],
+        "rating": 4.1,
+        "reviews": 67
+    },
+    {
+        "id": 6,
+        "name": "Cotton Joggers",
+        "price": 699,
+        "category": "lowers",
+        "description": "Comfortable cotton joggers perfect for lounging or casual outings.",
+        "images": [
+            "assets/img/joggers-1.jpg",
+            "assets/img/joggers-2.jpg",
+            "assets/img/joggers-3.jpg"
+        ],
+        "rating": 4.4,
+        "reviews": 112
+    },
+    {
+        "id": 7,
+        "name": "Graphic Print T-Shirt",
+        "price": 599,
+        "category": "t-shirts",
+        "description": "Cool graphic print t-shirt with unique artwork for a stylish look.",
+        "images": [
+            "assets/img/graphic-tshirt-1.jpg",
+            "assets/img/graphic-tshirt-2.jpg",
+            "assets/img/graphic-tshirt-3.jpg"
+        ],
+        "rating": 4.6,
+        "reviews": 178
+    },
+    {
+        "id": 8,
+        "name": "Denim Jacket",
+        "price": 1499,
+        "category": "hoodies",
+        "description": "Classic denim jacket with a modern fit for a timeless look.",
+        "images": [
+            "assets/img/denim-jacket-1.jpg",
+            "assets/img/denim-jacket-2.jpg",
+            "assets/img/denim-jacket-3.jpg"
+        ],
+        "rating": 4.8,
+        "reviews": 203
+    }
+]
